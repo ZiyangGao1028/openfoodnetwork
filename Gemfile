@@ -151,4 +151,5 @@ group :development do
   # While we don't require this gem directly, no dependents forced the upgrade to a version
   # greater than 1.0.9, so we just required the latest available version here.
   gem 'eventmachine', '>= 1.2.3'
+  gem 'rswag'
 end

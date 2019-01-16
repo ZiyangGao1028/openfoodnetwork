@@ -1,0 +1,21 @@
+<h1>Listing api_v1_pets</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @api_v1_pets.each do |api_v1_pet| %>
+  <tr>
+    <td><%= link_to 'Show', api_v1_pet %></td>
+    <td><%= link_to 'Edit', edit_api_v1_pet_path(api_v1_pet) %></td>
+    <td><%= link_to 'Destroy', api_v1_pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pet', new_api_v1_pet_path %>
