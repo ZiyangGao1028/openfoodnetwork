@@ -1,0 +1,108 @@
+@import "typography";
+
+.darkswarm navigation {
+  display: block;
+  background: #f7f7f7;
+}
+.darkswarm navigation distributor.details {
+  box-sizing: border-box;
+  display: block;
+  min-height: 150px;
+  padding: 30px 0px 20px 0px;
+  position: relative;
+}
+.darkswarm navigation distributor.details select {
+  width: 200px;
+}
+.darkswarm navigation distributor.details img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin-right: 12px;
+}
+.darkswarm navigation distributor.details location {
+  font-family: "Oswald", sans-serif;
+}
+@media all and (max-width: 768px) {
+  .darkswarm navigation distributor.details location, .darkswarm navigation distributor.details location + small {
+    display: block;
+  }
+}
+.darkswarm navigation distributor.details #distributor_title h3 {
+  margin-top: 0;
+}
+@media all and (max-width: 768px) {
+  .darkswarm navigation distributor.details #distributor_title h3 {
+    margin-bottom: 8px;
+  }
+}
+.darkswarm navigation distributor.details ordercycle {
+  text-align: right;
+  float: right;
+}
+.darkswarm navigation distributor.details ordercycle p {
+  max-width: 400px;
+}
+.darkswarm navigation distributor.details ordercycle h4 i {
+  margin-right: 0.3rem;
+}
+@media all and (max-width: 640px) {
+  .darkswarm navigation distributor.details ordercycle {
+    float: left;
+    clear: left;
+    text-align: left;
+    padding: 12px 10px;
+    width: 100%;
+    margin-top: 10px;
+    background: #e5e5e5;
+  }
+  .darkswarm navigation distributor.details ordercycle p {
+    max-width: 100%;
+  }
+}
+.darkswarm navigation distributor.details ordercycle form.custom {
+  text-align: right;
+}
+.darkswarm navigation distributor.details ordercycle form.custom > strong {
+  line-height: 2.5;
+  font-size: 1.29em;
+  padding-right: 14px;
+}
+.darkswarm navigation distributor.details ordercycle form.custom select {
+  width: inherit;
+  display: inline-block;
+  border-width: 1px;
+  border-color: #999;
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 0;
+  padding: 8px 20px 8px 12px;
+}
+@media all and (max-width: 768px) {
+  .darkswarm navigation distributor.details ordercycle form.custom select {
+    font-size: 0.875em;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .darkswarm navigation distributor.details ordercycle form.custom select {
+    font-size: 16px;
+  }
+}
+.darkswarm navigation distributor.details ordercycle closing {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1.5em;
+  display: block;
+  padding-bottom: 12px;
+}
+@media all and (max-width: 768px) {
+  .darkswarm navigation distributor.details ordercycle closing {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  .darkswarm navigation distributor.details ordercycle span {
+    font-size: 0.875em;
+  }
+}

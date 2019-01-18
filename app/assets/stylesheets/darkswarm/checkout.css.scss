@@ -1,0 +1,96 @@
+@import "mixins";
+@import "branding";
+@import "animations";
+
+.order-summary {
+  background-color: #e1f0f5;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  color: inherit;
+}
+
+checkout {
+  display: block;
+}
+@media all and (max-width: 640px) {
+  checkout.row .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+checkout orderdetails .button, checkout orderdetails table {
+  width: 100%;
+}
+@media all and (max-width: 640px) {
+  checkout orderdetails form.edit_order {
+    border: 1px solid #cccccc;
+    margin-bottom: 2rem;
+  }
+}
+checkout #details, checkout #billing, checkout #shipping, checkout #payment {
+  border: 0;
+  margin: 1em 0;
+  padding: 0;
+}
+checkout #details .content, checkout #billing .content, checkout #shipping .content, checkout #payment .content {
+  border: 1px solid #efefef;
+}
+checkout h5 {
+  margin: 0;
+  padding: 0.65em;
+  background: #f7f7f7;
+}
+checkout h5 .label {
+  font-size: 1em;
+  padding: 0.3rem 0.35rem 0.275rem;
+}
+checkout h5 label, checkout h5 label.alert, checkout h5 label.success, checkout h5.valid label.alert, checkout h5.dirty label.success {
+  display: none;
+}
+checkout h5.dirty label.alert {
+  display: inline;
+}
+checkout h5.dirty.valid label.alert {
+  display: none;
+}
+checkout h5.valid label.success {
+  display: inline;
+}
+checkout h5.dirty {
+  background: #f7ccc5;
+}
+checkout h5.valid, checkout h5.dirty.valid {
+  background: #bfefd1;
+}
+checkout orderdetails table tr th {
+  text-align: left;
+}
+checkout dd > a {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform-style: preserve-3d;
+  background: #e5e5e5 !important;
+}
+checkout dd > a:hover {
+  background: gray !important;
+  color: white;
+}
+checkout dd span.accordion-up {
+  display: none;
+}
+checkout dd span.accordion-down {
+  display: inline;
+}
+checkout dd.open span.accordion-up {
+  display: inline;
+}
+checkout dd.open span.accordion-down {
+  display: none;
+}
+checkout .error {
+  color: #c82020;
+}
